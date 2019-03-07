@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tiagoleichs.helpgermany.mapas">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-9189166219398284/7931271629"
+            ads:layout_constraintLeft_toLeftOf="parent"
+            ads:layout_constraintRight_toRightOf="parent"
+            ads:layout_constraintTop_toTopOf="parent"></com.google.android.gms.ads.AdView>
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/house" />
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView2"
+            android:text="Abaixo você pode ver as localidades no googlemaps. Basta clicar na localidade no googlemaps mais perto de você." />
+
+        <Button
+            android:id="@+id/btnanmeldungmap"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Departamentos de Anmeldung" />
+
+        <Button
+            android:id="@+id/btnagenturmap"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnanmeldungmap"
+            android:layout_centerHorizontal="true"
+            android:text="Departamentos da Agentur für Arbeit" />
+
+        <Button
+            android:id="@+id/btnjobcentermap"
+            style="@android:style/Widget.Button.Inset"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnanmeldungmap"
+            android:layout_centerHorizontal="true"
+            android:text="Departamentos de Jobcenter" />
+
+        <Button
+            android:id="@+id/btngewerbemap"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnjobcentermap"
+            android:layout_centerHorizontal="true"
+            android:text="Departamentos de Gewerbeschein" />
+
+        <Button
+            android:id="@+id/btnhospitalmap"
+            style="@android:style/Widget.Button.Inset"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btngewerbemap"
+            android:layout_centerHorizontal="true"
+            android:text="Hospitais" />
+
+        <Button
+            android:id="@+id/btnarztmap"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnhospitalmap"
+            android:layout_centerHorizontal="true"
+            android:text="Serviços de saúde que falam português" />
+
+        <Button
+            android:id="@+id/btnfinanzmap"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnarztmap"
+            android:layout_centerHorizontal="true"
+            android:text="Finanzämter" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/btnfinanzmap"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+
+
+    </RelativeLayout>
+</ScrollView>
+
+</FrameLayout>

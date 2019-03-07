@@ -1,0 +1,129 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tiagoleichs.helpgermany.SitesI">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-9189166219398284/7931271629"
+                ads:layout_constraintLeft_toLeftOf="parent"
+                ads:layout_constraintRight_toRightOf="parent"
+                ads:layout_constraintTop_toTopOf="parent"></com.google.android.gms.ads.AdView>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/house" />
+
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView2"
+                android:text="Sotto trovi informazioni presso i siti ufficialli di Berlino." />
+
+            <Button
+                android:id="@+id/btnambasciata"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView13"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+
+                android:text="Sito dell`ambasciata"/>
+
+            <Button
+                android:id="@+id/btnagentur"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnambasciata"
+                android:layout_centerHorizontal="true"
+                android:text="Sito dell'Agentur für Arbeit" />
+
+            <Button
+                android:id="@+id/btnjobcenter"
+                style="@android:style/Widget.Button.Inset"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnagentur"
+                android:layout_centerHorizontal="true"
+                android:text="Sito del Jobcenter" />
+
+            <Button
+                android:id="@+id/btngewerbe"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnjobcenter"
+                android:layout_centerHorizontal="true"
+                android:text="Sito per fare la partita IVA" />
+
+            <Button
+                android:id="@+id/btnfinanz"
+                style="@android:style/Widget.Button.Inset"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btngewerbe"
+                android:layout_centerHorizontal="true"
+                android:text="Sito del Finanzamt" />
+
+            <Button
+                android:id="@+id/btnburger"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnfinanz"
+                android:layout_centerHorizontal="true"
+                android:text="Sito del Bürgeramt" />
+
+            <Button
+                android:id="@+id/btnanmeldung"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnburger"
+                android:layout_centerHorizontal="true"
+                android:text="Sito su Anmeldung" />
+
+
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/btnanmeldung"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>

@@ -1,0 +1,390 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tiagoleichs.helpgermany.ServiceE">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-9189166219398284/7931271629"
+            ads:layout_constraintLeft_toLeftOf="parent"
+            ads:layout_constraintRight_toRightOf="parent"
+            ads:layout_constraintTop_toTopOf="parent"></com.google.android.gms.ads.AdView>
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+
+            app:srcCompat="@drawable/house" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/explanationE" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="14dp"
+            app:srcCompat="@drawable/perfil" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_alignTop="@+id/imageView3"
+            android:text="@string/nome" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:text="@string/moabit" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_below="@+id/textView7"
+            android:text="@string/facebook" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView8"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_toEndOf="@+id/textView8"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="Go to messenger" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_below="@+id/textView8"
+            android:text="@string/email" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView10"
+            android:layout_toEndOf="@+id/textView8"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="@string/em" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11"
+            android:layout_centerHorizontal="true"
+            android:text="@string/servicosE" />
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignStart="@+id/imageView312"
+            android:layout_below="@+id/textView12"
+            android:layout_marginTop="13dp"
+            app:srcCompat="@drawable/flage" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_alignTop="@+id/imageView31"
+            android:text="David Berndt" />
+
+        <TextView
+            android:id="@+id/textView71"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView4"
+            android:text="Prenzlauer Berg" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView71"
+            android:layout_below="@+id/textView71"
+            android:text="@string/email" />
+
+        <TextView
+            android:id="@+id/textView91"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView81"
+            android:layout_alignBottom="@+id/textView81"
+            android:layout_toEndOf="@+id/textView81"
+            android:text="davidhberndt@gmail.com"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <TextView
+            android:id="@+id/textView101"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView81"
+            android:layout_below="@+id/textView81" />
+
+        <TextView
+            android:id="@+id/textView111"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView101"
+            android:layout_toEndOf="@+id/textView81" />
+
+        <TextView
+            android:id="@+id/textView121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView101"
+            android:layout_below="@+id/imageView31"
+            android:text="Services: Conversation in German" />
+
+        <ImageView
+            android:id="@+id/imageView312"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView121"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="14dp"
+            app:srcCompat="@drawable/margareth" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_alignTop="@+id/imageView312"
+            android:text="Margareth Dlugosz Pilroto" />
+
+        <TextView
+            android:id="@+id/textView712"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView42"
+            android:text="Prenzlauer Berg" />
+
+        <TextView
+            android:id="@+id/textView812"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView712"
+            android:layout_below="@+id/textView712"
+
+            android:text="Email:" />
+
+        <TextView
+            android:id="@+id/textView912"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView812"
+            android:layout_alignBottom="@+id/textView812"
+            android:layout_toEndOf="@+id/textView812"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="mdlugoszpilroto@gmail.com"/>
+
+        <TextView
+            android:id="@+id/textView1012"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView812"
+            android:layout_below="@+id/textView812"
+            android:text="WhatsApp:" />
+
+        <TextView
+            android:id="@+id/textView1112"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView1012"
+            android:layout_toEndOf="@+id/textView812"
+            android:text="004915229903176"/>
+
+        <TextView
+            android:id="@+id/textView1212"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView1012"
+            android:layout_below="@+id/imageView312"
+            android:text="Services: Jobcenter/ Anmeldung/ Kita/ WBS/ Translations" />
+        <ImageView
+            android:id="@+id/imageView312a"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView1212"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="14dp"
+            app:srcCompat="@drawable/doris" />
+
+        <TextView
+            android:id="@+id/textView42a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_alignTop="@+id/imageView312a"
+            android:text="Doris Bunch" />
+
+        <TextView
+            android:id="@+id/textView712a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView42a"
+            android:text="Kreuzberg" />
+
+        <TextView
+            android:id="@+id/textView812a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView712a"
+            android:layout_below="@+id/textView712a"
+            android:text="Email:" />
+
+        <TextView
+            android:id="@+id/textView912a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView812a"
+            android:layout_alignBottom="@+id/textView812a"
+            android:layout_toEndOf="@+id/textView812"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="dorisinberlin@gmail.com"/>
+
+        <TextView
+            android:id="@+id/textView1012a"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView812a"
+            android:layout_below="@+id/textView812a"
+            android:text="Telephone:" />
+
+        <TextView
+            android:id="@+id/textView1112a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView1012a"
+            android:layout_toEndOf="@+id/textView1012a"
+            android:text="+4917638482025"
+            />
+
+        <TextView
+            android:id="@+id/textView1212a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView1012a"
+            android:layout_below="@+id/imageView312a"
+            android:text="Services: Jobcenter/ Visto/ Anmeldung/ Kita/ WBS/ translations" />
+
+        <ImageView
+            android:id="@+id/imageView312b"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView1212a"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="14dp"
+            app:srcCompat="@drawable/yourphoto" />
+
+        <TextView
+            android:id="@+id/textView42b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_alignTop="@+id/imageView312b"
+            android:text="Your name here" />
+
+        <TextView
+            android:id="@+id/textView712b"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView42b"
+            android:text="Your region" />
+
+        <TextView
+            android:id="@+id/textView812b"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView712"
+            android:layout_below="@+id/textView712b"
+            android:text="Contact1" />
+
+        <TextView
+            android:id="@+id/textView912b"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView812b"
+            android:layout_alignBottom="@+id/textView812b"
+            android:layout_toEndOf="@+id/textView812b" />
+
+        <TextView
+            android:id="@+id/textView1012b"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView812b"
+            android:layout_below="@+id/textView812b"
+            android:text="Contact2" />
+
+        <TextView
+            android:id="@+id/textView1112b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView1012b"
+            android:layout_toEndOf="@+id/textView812b" />
+
+        <TextView
+            android:id="@+id/textView1212b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView1012b"
+            android:layout_below="@+id/imageView312b"
+            android:text="Services" />
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>
